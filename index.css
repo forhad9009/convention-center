@@ -30,6 +30,12 @@ nav ul li a{
     width: 100%;
 }
 
+@media screen and (max-width: 576px) {
+    .header-container{
+       flex-direction: column;
+    }
+}
+
 section{
     display: flex;
 }
@@ -53,6 +59,20 @@ section img{
     background-color: blueviolet;
     padding: 1% 2%;
     color: #fff;
+}
+
+@media screen and (max-width: 576px) {
+    section{
+        flex-direction: column-reverse;
+    }
+    .section-title{
+       text-align: center;
+    }
+    section img{
+        width: 100%;
+        padding: 0;
+        margin-top: 5%;
+    }
 }
 
 .package-section-title{
@@ -136,6 +156,20 @@ section img{
     margin-top: 5%;
  }
 
+ @media screen and (max-width: 576px) {
+    .package-items{
+        flex-direction: column;
+         }
+         .items-1{
+             margin-bottom: 8%;
+         }
+         .two{
+             margin-top: 10%;
+         }
+ }
+  
+        
+
  .client h1{
     text-align: center;
     margin-bottom: 6%;
@@ -149,7 +183,7 @@ section img{
  .client-items{
     text-align: center;
     padding: 3%;
-    box-shadow: 0px 1px 1px 0.1px;
+    box-shadow: 0px 0px 1px 0.1px;
     margin-left: 2%;
  }
  .client-items p{
@@ -163,6 +197,16 @@ section img{
  .client-items h4{
     margin-top: 2%;
     color: gray;
+ }
+
+
+ @media screen and (max-width: 576px) {
+    .client-details{
+        flex-direction: column;
+     }
+     .client-items{
+        margin-bottom: 10%;
+     }
  }
 
  .questions-section h1{
@@ -199,6 +243,17 @@ section img{
     padding: 8% 8% 8% 0;
  }
 
+
+ @media screen and (max-width: 576px) {
+    .questions{
+        flex-direction: column;
+     }
+     .questions img{
+        width: 100%;
+        height: ;
+        padding: 0;
+     }
+ }
  footer{
     height: 250px;
     background-color: black;
